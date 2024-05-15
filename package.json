@@ -1,4 +1,13 @@
 {
   "name": "swc-node",
-  "packageManager": "yarn@4.2.2"
+  "packageManager": "yarn@4.2.2",
+  "scripts": {
+    "script": "node --import @swc-node/register/esm-register script.ts"
+  },
+  "dependencies": {
+    "@swc-node/register": "^1.9.1",
+    "@swc/core": "^1.5.6",
+    "@tsconfig/node20": "^20.1.4",
+    "typescript": "^5.4.5"
+  }
 }
