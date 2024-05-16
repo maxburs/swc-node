@@ -6,7 +6,8 @@
     "script": "node --import @swc-node/register/esm-register script.ts",
     "withConfig": "SWCRC=true yarn script",
     "no-tsconfig": "SWC_NODE_PROJECT=null yarn script",
-    "transpile": "swc ./script.ts"
+    "transpile": "swc ./script.ts",
+    "cantImportJsFile": "node --import @swc-node/register/esm-register script2.ts"
   },
   "dependencies": {
     "@swc-node/register": "^1.9.1",
